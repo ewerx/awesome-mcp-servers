@@ -301,6 +301,7 @@ Web 内容访问和自动化功能。支持以 AI 友好格式搜索、抓取和
 - [ferdousbhai/investor-agent](https://github.com/ferdousbhai/investor-agent) 🐍 ☁️ - 整合雅虎财经以获取股市数据，包括期权推荐
 - [mcpdotdirect/evm-mcp-server](https://github.com/mcpdotdirect/evm-mcp-server) 📇 ☁️ - 全面支持30多种EVM网络的区块链服务，涵盖原生代币、ERC20、NFT、智能合约、交易及ENS解析。
 - [bankless/onchain-mcp](https://github.com/Bankless/onchain-mcp/) 📇 ☁️ - Bankless链上API，用于与智能合约交互、查询交易及代币信息
+- [Codex-Data/codex-mcp](https://github.com/Codex-Data/codex-mcp) 🎖️ 📇 ☁️ - 集成 [Codex API](https://www.codex.io)，支持60多个网络的实时增强型区块链与市场数据
 - [kukapay/cryptopanic-mcp-server](https://github.com/kukapay/cryptopanic-mcp-server) 🐍 ☁️ - 为AI代理提供由CryptoPanic驱动的最新加密货币新闻。
 - [kukapay/whale-tracker-mcp](https://github.com/kukapay/whale-tracker-mcp) 🐍 ☁️ -  一个用于追踪加密货币大额交易的MCP服务器。
 - [kukapay/crypto-feargreed-mcp](https://github.com/kukapay/crypto-feargreed-mcp) 🐍 ☁️ -  提供实时和历史加密恐惧与贪婪指数数据。

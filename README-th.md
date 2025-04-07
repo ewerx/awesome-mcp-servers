@@ -10,13 +10,13 @@
 
 รายการรวบรวม Model Context Protocol (MCP) servers ที่น่าสนใจ
 
-* [MCP คืออะไร?](#what-is-mcp)
-* [ไคลเอนต์](#clients) 
-* [บทแนะนำ](#tutorials)
-* [การนำไปใช้งานเซิร์ฟเวอร์](#server-implementations)
-* [เฟรมเวิร์ค](#frameworks)
-* [ยูทิลิตี้](#utilities)
-* [เคล็ดลับและเทคนิค](#tips-and-tricks)
+- [MCP คืออะไร?](#what-is-mcp)
+- [ไคลเอนต์](#clients)
+- [บทแนะนำ](#tutorials)
+- [การนำไปใช้งานเซิร์ฟเวอร์](#server-implementations)
+- [เฟรมเวิร์ค](#frameworks)
+- [ยูทิลิตี้](#utilities)
+- [เคล็ดลับและเทคนิค](#tips-and-tricks)
 
 ## MCP คืออะไร?
 
@@ -26,75 +26,75 @@
 
 ดูเพิ่มเติมได้ที่ [awesome-mcp-clients](https://github.com/punkpeye/awesome-mcp-clients/) และ [glama.ai/mcp/clients](https://glama.ai/mcp/clients)
 
-> [!TIP]
-> [Glama Chat](https://glama.ai/chat) คือไคลเอนต์ AI แบบ multi-modal ที่รองรับ MCP และมี [AI gateway](https://glama.ai/gateway)
+> [!TIP] > [Glama Chat](https://glama.ai/chat) คือไคลเอนต์ AI แบบ multi-modal ที่รองรับ MCP และมี [AI gateway](https://glama.ai/gateway)
 
-## บทแนะนำ 
+## บทแนะนำ
 
-* [Model Context Protocol (MCP) เริ่มต้นอย่างรวดเร็ว](https://glama.ai/blog/2024-11-25-model-context-protocol-quickstart)
-* [การตั้งค่า Claude Desktop App เพื่อใช้งานกับฐานข้อมูล SQLite](https://youtu.be/wxCCzo9dGj0)
+- [Model Context Protocol (MCP) เริ่มต้นอย่างรวดเร็ว](https://glama.ai/blog/2024-11-25-model-context-protocol-quickstart)
+- [การตั้งค่า Claude Desktop App เพื่อใช้งานกับฐานข้อมูล SQLite](https://youtu.be/wxCCzo9dGj0)
 
 ## ชุมชน
 
-* [r/mcp Reddit](https://www.reddit.com/r/mcp)
-* [เซิร์ฟเวอร์ Discord](https://glama.ai/mcp/discord)
+- [r/mcp Reddit](https://www.reddit.com/r/mcp)
+- [เซิร์ฟเวอร์ Discord](https://glama.ai/mcp/discord)
 
 ## คำอธิบายสัญลักษณ์
 
-* 🎖️ – การนำไปใช้งานอย่างเป็นทางการ
-* ภาษาโปรแกรมมิ่ง
-  * 🐍 – โค้ดเบส Python
-  * 📇 – โค้ดเบส TypeScript
-  * 🏎️ – โค้ดเบส Go
-  * 🦀 – โค้ดเบส Rust
-  * #️⃣ - โค้ดเบส C#
-  * ☕ - โค้ดเบส Java
-* ขอบเขต
-  * ☁️ - บริการคลาวด์
-  * 🏠 - บริการในเครื่อง
-  * 📟 - ระบบฝังตัว
-* ระบบปฏิบัติการ
-  * 🍎 – สำหรับ macOS
-  * 🪟 – สำหรับ Windows
-  * 🐧 - สำหรับ Linux
+- 🎖️ – การนำไปใช้งานอย่างเป็นทางการ
+- ภาษาโปรแกรมมิ่ง
+  - 🐍 – โค้ดเบส Python
+  - 📇 – โค้ดเบส TypeScript
+  - 🏎️ – โค้ดเบส Go
+  - 🦀 – โค้ดเบส Rust
+  - #️⃣ - โค้ดเบส C#
+  - ☕ - โค้ดเบส Java
+- ขอบเขต
+  - ☁️ - บริการคลาวด์
+  - 🏠 - บริการในเครื่อง
+  - 📟 - ระบบฝังตัว
+- ระบบปฏิบัติการ
+  - 🍎 – สำหรับ macOS
+  - 🪟 – สำหรับ Windows
+  - 🐧 - สำหรับ Linux
 
 > [!NOTE]
 > สับสนระหว่าง Local 🏠 กับ Cloud ☁️ ?
-> * ใช้ local เมื่อ MCP เซิร์ฟเวอร์สื่อสารกับซอฟต์แวร์ที่ติดตั้งในเครื่อง เช่น การควบคุมเบราว์เซอร์ Chrome
-> * ใช้ network เมื่อ MCP เซิร์ฟเวอร์สื่อสารกับ API ระยะไกล เช่น API สภาพอากาศ
+>
+> - ใช้ local เมื่อ MCP เซิร์ฟเวอร์สื่อสารกับซอฟต์แวร์ที่ติดตั้งในเครื่อง เช่น การควบคุมเบราว์เซอร์ Chrome
+> - ใช้ network เมื่อ MCP เซิร์ฟเวอร์สื่อสารกับ API ระยะไกล เช่น API สภาพอากาศ
 
 ## การนำไปใช้งานเซิร์ฟเวอร์
 
 > [!NOTE]
 > ตอนนี้เรามี[ไดเร็กทอรี web-based](https://glama.ai/mcp/servers) ที่ซิงค์กับ repository นี้
 
-* 🔗 - [รวบรวม](#aggregators)
-* 🎨 - [ศิลปะและวัฒนธรรม](#art-and-culture)
-* 📂 - [การทำงานอัตโนมัติของเบราว์เซอร์](#browser-automation)  
-* ☁️ - [แพลตฟอร์มคลาวด์](#cloud-platforms)
-* 👨‍💻 - [การเรียกใช้โค้ด](#code-execution)
-* 🖥️ - [คำสั่งในเทอร์มินัล](#command-line) 
-* 💬 - [การสื่อสาร](#communication)
-* 👤 - [แพลตฟอร์มข้อมูลลูกค้า](#customer-data-platforms)
-* 🗄️ - [ฐานข้อมูล](#databases)
-* 📊 - [แพลตฟอร์มข้อมูล](#data-platforms)
-* 🛠️ - [เครื่องมือสำหรับนักพัฒนา](#developer-tools)
-* 📟 - [ระบบฝังตัว](#embedded-system)
-* 📂 - [ระบบไฟล์](#file-systems)
-* 💰 - [การเงินและฟินเทค](#finance--fintech)
-* 🎮 - [เกม](#gaming)
-* 🧠 - [ความรู้และความจำ](#knowledge--memory)
-* 🗺️ - [บริการตำแหน่ง](#location-services)
-* 🎯 - [การตลาด](#marketing)
-* 📊 - [การตรวจสอบ](#monitoring)
-* 🔎 - [ค้นหาและสกัดข้อมูล](#search)
-* 🔒 - [ความปลอดภัย](#security)
-* 🏃 - [กีฬา](#sports)
-* 🎧 - [การสนับสนุนและจัดการบริการ](#support-and-service-management)
-* 🌎 - [บริการแปลภาษา](#translation-services)
-* 🚆 - [การเดินทางและการขนส่ง](#travel-and-transportation)
-* 🔄 - [ระบบควบคุมเวอร์ชัน](#version-control)
-* 🛠️ - [เครื่องมือและการผสานรวมอื่นๆ](#other-tools-and-integrations)
+- 🔗 - [รวบรวม](#aggregators)
+- 🎨 - [ศิลปะและวัฒนธรรม](#art-and-culture)
+- 📂 - [การทำงานอัตโนมัติของเบราว์เซอร์](#browser-automation)
+- ☁️ - [แพลตฟอร์มคลาวด์](#cloud-platforms)
+- 👨‍💻 - [การเรียกใช้โค้ด](#code-execution)
+- 🖥️ - [คำสั่งในเทอร์มินัล](#command-line)
+- 💬 - [การสื่อสาร](#communication)
+- 👤 - [แพลตฟอร์มข้อมูลลูกค้า](#customer-data-platforms)
+- 🗄️ - [ฐานข้อมูล](#databases)
+- 📊 - [แพลตฟอร์มข้อมูล](#data-platforms)
+- 🛠️ - [เครื่องมือสำหรับนักพัฒนา](#developer-tools)
+- 📟 - [ระบบฝังตัว](#embedded-system)
+- 📂 - [ระบบไฟล์](#file-systems)
+- 💰 - [การเงินและฟินเทค](#finance--fintech)
+- 🎮 - [เกม](#gaming)
+- 🧠 - [ความรู้และความจำ](#knowledge--memory)
+- 🗺️ - [บริการตำแหน่ง](#location-services)
+- 🎯 - [การตลาด](#marketing)
+- 📊 - [การตรวจสอบ](#monitoring)
+- 🔎 - [ค้นหาและสกัดข้อมูล](#search)
+- 🔒 - [ความปลอดภัย](#security)
+- 🏃 - [กีฬา](#sports)
+- 🎧 - [การสนับสนุนและจัดการบริการ](#support-and-service-management)
+- 🌎 - [บริการแปลภาษา](#translation-services)
+- 🚆 - [การเดินทางและการขนส่ง](#travel-and-transportation)
+- 🔄 - [ระบบควบคุมเวอร์ชัน](#version-control)
+- 🛠️ - [เครื่องมือและการผสานรวมอื่นๆ](#other-tools-and-integrations)
 
 ### 🔗 รวบรวม
 
@@ -102,7 +102,7 @@
 
 - [PipedreamHQ/pipedream](https://github.com/PipedreamHQ/pipedream/tree/master/modelcontextprotocol) ☁️ 🏠 - เชื่อมต่อกับ API 2,500 รายการ พร้อมเครื่องมือสำเร็จรูป 8,000+ รายการ และจัดการเซิร์ฟเวอร์สำหรับผู้ใช้งานของคุณในแอปของคุณเอง
 
-### 🎨 ศิลปะและวัฒนธรรม 
+### 🎨 ศิลปะและวัฒนธรรม
 
 เข้าถึงและสำรวจคอลเลกชันงานศิลปะ มรดกทางวัฒนธรรม และฐานข้อมูลพิพิธภัณฑ์ ช่วยให้โมเดล AI สามารถค้นหาและวิเคราะห์เนื้อหาด้านศิลปะและวัฒนธรรม
 
@@ -255,7 +255,7 @@
 - [joshuarileydev/app-store-connect-mcp-server](https://github.com/JoshuaRileyDev/app-store-connect-mcp-server) 📇 🏠 - เซิร์ฟเวอร์ MCP เพื่อสื่อสารกับ App Store Connect API สำหรับนักพัฒนา iOS
 - [joshuarileydev/simulator-mcp-server](https://github.com/JoshuaRileyDev/simulator-mcp-server) 📇 🏠 - เซิร์ฟเวอร์ MCP เพื่อควบคุม iOS Simulators
 - [lamemind/mcp-server-multiverse](https://github.com/lamemind/mcp-server-multiverse) 📇 🏠 🛠️ - เซิร์ฟเวอร์มิดเดิลแวร์ที่ช่วยให้อินสแตนซ์ที่แยกจากกันหลายอินสแตนซ์ของเซิร์ฟเวอร์ MCP เดียวกันสามารถอยู่ร่วมกันได้อย่างอิสระด้วยเนมสเปซและการกำหนดค่าที่ไม่ซ้ำกัน
-- [langfuse/mcp-server-langfuse](https://github.com/langfuse/mcp-server-langfuse) 🐍 🏠 - เซิร์ฟเวอร์ MCP เพื่อเข้าถึงและจัดการพรอมต์แอปพลิเคชัน LLM ที่สร้างด้วย [Langfuse]([https://langfuse.com/](https://langfuse.com/docs/prompts/get-started)) Prompt Management
+- [langfuse/mcp-server-langfuse](https://github.com/langfuse/mcp-server-langfuse) 🐍 🏠 - เซิร์ฟเวอร์ MCP เพื่อเข้าถึงและจัดการพรอมต์แอปพลิเคชัน LLM ที่สร้างด้วย [Langfuse](<[https://langfuse.com/](https://langfuse.com/docs/prompts/get-started)>) Prompt Management
 - [mrexodia/user-feedback-mcp](https://github.com/mrexodia/user-feedback-mcp) 🐍 🏠 - เซิร์ฟเวอร์ MCP อย่างง่ายเพื่อเปิดใช้งานเวิร์กโฟลว์ human-in-the-loop ในเครื่องมือเช่น Cline และ Cursor
 - [OctoMind-dev/octomind-mcp](https://github.com/OctoMind-dev/octomind-mcp) - 📇 ☁️ ให้ตัวแทน AI ที่คุณต้องการสร้างและรันการทดสอบ end-to-end ของ [Octomind](https://www.octomind.dev/) ที่จัดการเต็มรูปแบบจากโค้ดเบสของคุณหรือแหล่งข้อมูลอื่นๆ เช่น Jira, Slack หรือ TestRail
 - [pskill9/website-downloader](https://github.com/pskill9/website-downloader) 🗄️ 🚀 - เซิร์ฟเวอร์ MCP นี้มีเครื่องมือสำหรับดาวน์โหลดเว็บไซต์ทั้งหมดโดยใช้ wget มันรักษาโครงสร้างเว็บไซต์และแปลงลิงก์ให้ทำงานในเครื่อง
@@ -319,6 +319,7 @@
 - [berlinbra/alpha-vantage-mcp](https://github.com/berlinbra/alpha-vantage-mcp) 🐍 ☁️ - การผสานรวม Alpha Vantage API เพื่อดึงข้อมูลทั้งหุ้นและ crypto
 - [bitteprotocol/mcp](https://github.com/BitteProtocol/mcp) 📇 - การผสานรวม Bitte Protocol เพื่อรันตัวแทน AI บนบล็อกเชนหลายตัว
 - [chargebee/mcp](https://github.com/chargebee/agentkit/tree/main/modelcontextprotocol) 🎖️ 📇 ☁️ - เซิร์ฟเวอร์ MCP ที่เชื่อมต่อตัวแทน AI กับแพลตฟอร์ม [Chargebee](https://www.chargebee.com/)
+- [codex-data/codex-mcp](https://github.com/Codex-Data/codex-mcp) 🎖️ 📇 ☁️ - การผสานรวม [Codex API](https://www.codex.io) สำหรับข้อมูลบล็อกเชนและตลาดที่เสริมคุณค่าแบบเรียลไทม์ในเครือข่ายกว่า 60 แห่ง
 - [ferdousbhai/investor-agent](https://github.com/ferdousbhai/investor-agent) 🐍 ☁️ - การผสานรวม Yahoo Finance เพื่อดึงข้อมูลตลาดหุ้น รวมถึงคำแนะนำออปชัน
 - [ferdousbhai/tasty-agent](https://github.com/ferdousbhai/tasty-agent) 🐍 ☁️ - การผสานรวม Tastyworks API เพื่อจัดการกิจกรรมการซื้อขายบน Tastytrade
 - [getalby/nwc-mcp-server](https://github.com/getalby/nwc-mcp-server) 📇 🏠 - การผสานรวมกระเป๋าเงิน Bitcoin Lightning ขับเคลื่อนโดย Nostr Wallet Connect
